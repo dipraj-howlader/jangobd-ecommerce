@@ -2,16 +2,15 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
+
 import Home from './components/Home/Home/Home';
 
 const App = () => {
   return (
     <Router>
       <Switch>
-   
         <Route path="/home">
           <Home></Home>
         </Route>
