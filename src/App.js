@@ -5,8 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import FirstPage from './Pages/FirstPage/FirstPage';
-import SecondPage from './Pages/SecondPage/SecondPage';
+import Home from './components/Home/Home/Home';
 
 const App = () => {
   return (
@@ -14,13 +13,12 @@ const App = () => {
       <Switch>
    
         <Route path="/home">
-        <FirstPage></FirstPage>
+          <Home></Home>
         </Route>
         <Route path="/checkout">
-          <SecondPage></SecondPage>
         </Route>
         <Route path="/">
-        <FirstPage></FirstPage>
+          <Home></Home>
         </Route>
       </Switch>
     </Router>
