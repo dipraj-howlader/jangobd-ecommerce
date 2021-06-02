@@ -12,14 +12,15 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/">
-        <FirstPage></FirstPage>
-        </Route>
+   
         <Route path="/home">
         <FirstPage></FirstPage>
         </Route>
         <Route path="/checkout">
           <SecondPage></SecondPage>
+        </Route>
+        <Route path="/">
+        <FirstPage></FirstPage>
         </Route>
       </Switch>
     </Router>
