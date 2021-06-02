@@ -1,0 +1,30 @@
+*{
+    --brandColor : #BA933E;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid var(--brandColor);
+}
+.navbar-container .logo{
+    color: var(--brandColor);
+}
+.navbar-container .menu .menu-item{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(92, 91, 91);
+}
+.navbar-container .menu .menu-item:hover{
+    color: var(--brandColor);
+}
+.essential-menu .item{
+    padding: 5px 8px;
+    font-size: 22px;
+    color: rgb(92, 91, 91);
+}
+.essential-menu .item:hover{
+    color: var(--brandColor);
+}
