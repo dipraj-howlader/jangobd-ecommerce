@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import FirstPage from './Pages/FirstPage/FirstPage';
+import SecondPage from './Pages/SecondPage/SecondPage';
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
         </Route>
         <Route path="/home">
         <FirstPage></FirstPage>
+        </Route>
+        <Route path="/checkout">
+          <SecondPage></SecondPage>
         </Route>
       </Switch>
     </Router>
