@@ -1,11 +1,21 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import FirstPage from './Pages/FirstPage/FirstPage';
 
 const App = () => {
   return (
-    <div>
-        <h1>This is ok</h1>
-        <h1>This ia I am goin to </h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/home">
+        <FirstPage></FirstPage>
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
