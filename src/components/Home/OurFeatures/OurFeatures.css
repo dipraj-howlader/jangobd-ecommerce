@@ -1,0 +1,15 @@
+.feature-section{
+    margin: 50px 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.feature-card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature-card .card-icon{
+    font-size: 40px;
+}
