@@ -1,6 +1,4 @@
-*{
-    --brandColor : #BA933E;
-}
+
 .navbar-container{
     display: flex;
     justify-content: space-around;

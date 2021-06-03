@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
-import { FaShoppingCart, FaSearch, } from "react-icons/fa";
-import { BsFillPersonFill } from "react-icons/bs";
+
+import { FiShoppingCart, FiUser, FiSearch } from "react-icons/fi";
 
 const Navbar = () => {
     return (
@@ -22,9 +22,9 @@ const Navbar = () => {
             </div>
             <div className="essential-menu">
                 <ul>
-                    <Link className="item" to=""><BsFillPersonFill/></Link>
-                    <Link className="item" to=""><FaSearch/></Link>
-                    <Link className="item" to=""><FaShoppingCart/></Link>
+                    <Link className="item" to=""><FiUser/></Link>
+                    <Link className="item" to=""><FiSearch/></Link>
+                    <Link className="item" to=""><FiShoppingCart/></Link>
                 </ul>
             </div>
         </div>
