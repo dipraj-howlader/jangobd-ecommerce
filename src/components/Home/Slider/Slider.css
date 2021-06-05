@@ -1,6 +1,7 @@
 .slider-container{
     height: 400px;
     width: 100vw;
+    margin-top: 80px;
 }
 .slider-container img{
     width: 100%;

@@ -1,10 +1,15 @@
 
 .navbar-container{
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     height: 80px;
     align-items: center;
     border-bottom: 1px solid var(--brandColor);
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 0;
 }
 .navbar-container .logo{
     color: var(--brandColor);
@@ -22,7 +27,18 @@
     padding: 5px 8px;
     font-size: 22px;
     color: rgb(92, 91, 91);
+    position: relative;
 }
 .essential-menu .item:hover{
     color: var(--brandColor);
+}
+.essential-menu .item span{
+    position: absolute;
+    top: -3px;
+    background-color: var(--brandColor);
+    padding: 2px 6px;
+    font-size: 15px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: white;
 }

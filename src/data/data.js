@@ -1,0 +1,51 @@
+export const data =[
+    {
+        "id":"01",
+        "name":"Iphone 12 max pro",
+        "price":"150",
+        "image":"https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg"
+    },
+    {
+        "id":"02",
+        "name":"Motorola Moto G10 Power",
+        "price":"50",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2021/04/Motorola-Moto-G10-Power-image.jpg"
+    },
+    {
+        "id":"03",
+        "name":"Xiaomi Poco X3 Pro",
+        "price":"100",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2021/05/Xiaomi-Poco-X3-Pro-image.jpg"
+    },
+    {
+        "id":"04",
+        "name":"Xiaomi Mi 11X 5G",
+        "price":"120",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2021/05/Xiaomi-Mi-11X-image.jpg"
+    },
+    {
+        "id":"05",
+        "name":"Samsung Galaxy A71",
+        "price":"150",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2020/01/Samsung-Galaxy-A71.jpg"
+    },
+    {
+        "id":"06",
+        "name":"Samsung Galaxy S21 Ultra",
+        "price":"250",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2021/01/Samsung-Galaxy-S21-Ultra-image.jpg"
+    },
+    {
+        "id":"07",
+        "name":"Samsung Galaxy M51",
+        "price":"80",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2020/09/Samsung-Galaxy-M51-Black-new.jpg"
+    },
+    {
+        "id":"08",
+        "name":"Oppo Reno5",
+        "price":"105",
+        "image":"https://www.mobiledokan.com/wp-content/uploads/2021/01/Oppo-Reno5-image.jpg"
+    }
+
+]
