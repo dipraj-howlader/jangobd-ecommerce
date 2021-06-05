@@ -17,14 +17,16 @@ const OurFeatures = () => {
             </div>
             <div className="feature-card">
                 <FiTruck className="card-icon" />
-                <h3>Free Worldwide Shipping</h3>
-                <p>On all orders over $75.00</p>
+                <h3>100% Payment Secure</h3>
+                <p>We ensure secure payment</p>
+                <p> with PEV</p>
                 <a href="#">Learn More</a>
             </div>
             <div className="feature-card">
                 <FiTruck className="card-icon" />
-                <h3>Free Worldwide Shipping</h3>
-                <p>On all orders over $75.00</p>
+                <h3>30 Days Return</h3>
+                <p>Return it within 20 day </p>
+                <p>for an exchange</p>
                 <a href="#">Learn More</a>
             </div>
         </div>

@@ -1,11 +1,15 @@
 
 .navbar-container{
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     height: 80px;
     align-items: center;
     border-bottom: 1px solid var(--brandColor);
-    
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 0;
 }
 .navbar-container .logo{
     color: var(--brandColor);

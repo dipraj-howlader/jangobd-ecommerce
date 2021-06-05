@@ -30,6 +30,7 @@
 }
 .add-cart{
     top:.5rem;
+    cursor: pointer;
 }
 .add-wishlist{
     top: 3rem;

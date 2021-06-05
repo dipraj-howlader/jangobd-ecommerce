@@ -6,10 +6,10 @@ const CartItem = (props) => {
     return (
 
         <div class="item-cart">
-            <div class="buttons">
+            {/* <div class="buttons">
                 <span class="delete-btn"></span>
                 <span class="like-btn"></span>
-            </div>
+            </div> */}
 
             <div class="image">
                 <img src={image} alt="" />

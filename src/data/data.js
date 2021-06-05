@@ -1,4 +1,4 @@
-[
+export const data =[
     {
         "id":"01",
         "name":"Iphone 12 max pro",
