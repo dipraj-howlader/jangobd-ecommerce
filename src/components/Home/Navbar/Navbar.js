@@ -8,18 +8,19 @@ const Navbar = () => {
 
     const cart = useSelector(state => state.cart.products)
     return (
-        <div className="navbar">
-            <div className="navbar-container">
-                <div className="logo">
-                    <h3>JangoBD</h3>
-                </div>
-                <div className="menu">
-                    <ul>
-                        <Link className="menu-item" to="">Home</Link>
-                        <Link className="menu-item" to="">Shop</Link>
-                        <Link className="menu-item" to="">Collections</Link>
-                        <Link className="menu-item" to="">Blog</Link>
-                        <Link className="menu-item" to="">Contact Us</Link>
+
+        <div className="navbar-container">
+            <div className="logo">
+                <h2>JangoBD</h2>
+            </div>
+            <div className="menu">
+                <ul>
+                    <Link className="menu-item" to="">Home</Link>
+                    <Link className="menu-item" to="">Shop</Link>
+                    <Link className="menu-item" to="">Collections</Link>
+                    <Link className="menu-item" to="">Blog</Link>
+                    <Link className="menu-item" to="">Contact Us</Link>
+
 
                     </ul>
                 </div>
@@ -31,7 +32,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        
     );
 };
 

@@ -7,6 +7,7 @@ import {
 import Cart from './components/Cart/Cart/Cart';
 
 import Home from './components/Home/Home/Home';
+import Payment from './components/Payment/Payment/Payment';
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
         </Route>
         <Route path="/cart">
           <Cart></Cart>
+        </Route>
+        <Route path="/payment">
+          <Payment></Payment>
         </Route>
         <Route path="/">
           <Home></Home>
