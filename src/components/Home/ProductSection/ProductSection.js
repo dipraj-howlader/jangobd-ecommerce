@@ -1,54 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProductSection.css'
 import { FiShoppingCart, FiShoppingBag } from "react-icons/fi";
-const ProductSection = () => {
+import ProductCart from '../ProductCart/ProductCart';
+import { connect } from 'react-redux';
+import { addProductToCart } from '../../../redux';
+
+const ProductSection = (props) => {
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(()=>{
+        fetch("https://mocki.io/v1/9f273413-f9f2-441c-ae23-8152ab20f723")
+        .then(res => res.json())
+        .then(data => setProducts(data))
+    },[])
+
+    const addToCartHandler = (product) => {
+        props.addProductToCart(product)
+    }
+    console.log(props);
     return (
         <div className="product-container">
             <h2>Trending Products</h2>
             <p>Top view in this week</p>
+            <h2>{props.products.products}</h2>
             <div className="products">
-
-                
-                <div class="products-card">
-                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg" alt="" />
-                    <a href="#" class="add-cart"><FiShoppingCart /></a>
-                    <a href="#" class="add-wishlist"><FiShoppingBag /></a>
-                    <div class="cart-bottom">
-                        <a href="#" class="products-card-title">Iphone 12pro Max</a>
-                        <p class="price"><s>$600</s> $500</p>
-                    </div>
-                </div> 
-                <div class="products-card">
-                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg" alt="" />
-                    <a href="#" class="add-cart"><FiShoppingCart /></a>
-                    <a href="#" class="add-wishlist"><FiShoppingBag /></a>
-                    <div class="cart-bottom">
-                        <a href="#" class="products-card-title">Iphone 12pro Max</a>
-                        <p class="price"><s>$600</s> $500</p>
-                    </div>
-                </div> 
-                <div class="products-card">
-                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg" alt="" />
-                    <a href="#" class="add-cart"><FiShoppingCart /></a>
-                    <a href="#" class="add-wishlist"><FiShoppingBag /></a>
-                    <div class="cart-bottom">
-                        <a href="#" class="products-card-title">Iphone 12pro Max</a>
-                        <p class="price"><s>$600</s> $500</p>
-                    </div>
-                </div> 
-                <div class="products-card">
-                    <img src="https://www.gizmochina.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-500x500.jpg" alt="" />
-                    <a href="#" class="add-cart"><FiShoppingCart /></a>
-                    <a href="#" class="add-wishlist"><FiShoppingBag /></a>
-                    <div class="cart-bottom">
-                        <a href="#" class="products-card-title">Iphone 12pro Max</a>
-                        <p class="price"><s>$600</s> $500</p>
-                    </div>
-                </div>
-                
+            {
+                products.map(product => <ProductCart product={product} addToCartHandler={addToCartHandler}></ProductCart>)
+            }
             </div>
         </div>
     );
 };
 
-export default ProductSection;
+const mapStateToProps = (state) => {
+    return {
+        products: state.cart.products
+    }
+};
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addProductToCart: product => {dispatch(addProductToCart(product));
+        }
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductSection)
